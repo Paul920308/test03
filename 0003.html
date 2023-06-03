@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表單</title>
+</head>
+<body bgcolor="	#A7F6F9" text="#FF0030">
+<form action="">
+<table align="center" border="0" cellspacing="0" width="70%" height="50">
+	<tr>
+		<td align="center">
+			<fieldset>
+			<legend><font color="#6F00D2"><b><i>個人相關資料</i></b></font></legend>
+			<table align="center" border="0" cellspacing="0" width="70%" height="30">
+			<p>姓名：<input type="text" name="username" placeholder="請輸入姓名" required autofocus></p>
+			<p>搜尋：<input type="search" name="search"></p>
+			<p>信箱：<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></p>
+			<p>電話：<input type="tel" name="tel"></p>
+			<p>出生日期：<input type="date" name="date"></p>
+			<p>喜歡顏色：<input type="color" name="color"></p>
+
+			</fieldset>
+		</td>
+	</tr>
+</table>
+<tr>
+            <td align="center">
+                <fieldset>
+                    <legend><font color="#6F00D2"><b><i>個人學業資料</i></b></font></legend>
+                    <table align="center" border="0" cellspacing="0" width="40%" height="50">
+                        <tr>
+                            <td align="right"><label for="month">畢業年月:</label></td>
+                            <td><input type="month" name="graduate"></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="txte">畢業學校:</label></td>
+                            <td><input type="text" name="school" placeholder="請輸入你畢業的學校"></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label>畢業學院:</label></td>
+                            <td> 
+                                <select name="college">
+                                    <option value="1">---</option>
+                                    <option value="2">工學院</option>
+                                    <option value="3">管理學院</option>
+                                    <option value="4">商學院</option>
+                                    <option value="5">生活創意學院</option>
+                                    <option value="6">醫學院</option>
+                                </select>
+                            </td>
+                        </tr>
+			</table>
+		</fieldset>
+	<tr>
+            <td align="center">
+                <fieldset>
+                    <legend><font color="#6F00D2"><b><i>擁有證照列表</i></b></font></legend>
+                    <table align="center" border="0" cellspacing="0" width="100%" height="40">
+                        <tr>
+                            <td align="right"><label>擁有證照:</label></td>
+                            <td colspan="8">
+                                <select name="license" size="7" multiple>
+                                    <optgroup label=語言檢定>
+                                        <option value="1">英檢</option>
+                                        <option value="2">雅思</option>
+                                        <option value="3">托福</option>
+                                        <option value="4">日檢</option>
+                                    </optgroup>
+                                </select>
+			</table>
+                  </fieldset>
+		</td>	
+        </tr>
+
+	<tr>
+            <td align="center">
+                <input type="submit" value="填完送出">
+                <input type="reset" value="清除重填">
+            </td>
+        </tr>
+</table>
+</form>
+</body>
+</html>
